@@ -1,0 +1,11 @@
+{
+  "repository": "https://github.com/petergyang/no-ai-slop",
+  "commit": "000650b156983f5159695b441477f4e63b25dc85",
+  "license": "MIT",
+  "files": {
+    "SKILL.md": "skills/no-ai-slop/SKILL.md",
+    "eval.md": "skills/no-ai-slop/eval.md",
+    "LICENSE": "LICENSE"
+  },
+  "integration": "Unmodified upstream documents. Squad uses a compact adaptation in quality.py and exposes the full documents through CLI and MCP. No runtime download or global skill installation."
+}
