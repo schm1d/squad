@@ -1,0 +1,24 @@
+[project]
+name = "squad-team-mode"
+version = "0.11.1"
+description = "Open team mode for Grok, Claude, Codex, agy, Qwen, Llama, DeepSeek, GLM, Mistral, Kimi, and any OpenAI-compatible or Ollama model"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Squad" }]
+license = { text = "MIT" }
+
+[project.scripts]
+squad = "squad.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["squad*"]
+
+[tool.setuptools.package-data]
+squad = ["vendor/no_ai_slop/*"]
+
+[project.optional-dependencies]
+mcp = ["mcp>=1.28,<2", "jsonschema>=4.23,<5", "httpx[socks]>=0.28,<1"]
